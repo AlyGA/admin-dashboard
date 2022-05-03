@@ -6,6 +6,7 @@
 .container {
   display: grid;
   grid-template-columns: 0.5fr 2.5fr;
+  grid-template-rows: 1fr 3fr;
 }
 
 .header {
@@ -13,4 +14,30 @@
   grid-row: 1 / 1;
   display: grid;
   grid-template-rows: 1fr 2fr;
+}
+
+.sidebar {
+  grid-column: 1 /1;
+  grid-row: 1 / span 2;
+  display: grid;
+}
+
+.content {
+  grid-column: 2 / 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  grid-column: 1 / 1;
+  grid-row: 1 / span 2;
+}
+
+.announcements {
+  grid-column: 2;
+}
+
+.trending {
+  grid-column: 2;
 }
