@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 
 .container {
@@ -35,8 +34,26 @@
   display: grid;
   grid-template-rows: 0.3fr 1fr 2fr;
   background-color: #5ab9ea;
-  padding-left: 10%;
   color: white;
+  padding-left: 5%;
+}
+
+#sidebar-header ul {
+  list-style: none;
+  padding-left: 0;
+  float: left;
+  margin-top: 5%;
+  margin-top: 2%;
+}
+
+#sidebar-header li {
+}
+
+#sidebar-header svg {
+  position: relative;
+  margin-right: 2%;
+  width: 50px;
+  height: 50px;
 }
 
 .content {
