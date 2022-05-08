@@ -39,7 +39,6 @@
 }
 
 #sidebar-header ul {
-  display: flex;
   list-style: none;
   padding-left: 0;
   float: left;
@@ -58,12 +57,52 @@
 #sidebar-header svg {
   position: relative;
   margin-right: 2%;
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  height: 10%;
 }
 
 #sidebar-header p {
-  padding-left: 5%;
+  padding-left: 10px;
+}
+
+#navigate ul {
+  list-style: none;
+  padding-left: 0;
+  float: left;
+  margin-top: 5%;
+  margin-top: 2%;
+}
+
+#navigate li {
+  padding-bottom: 6%;
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr;
+  align-items: center;
+  font-weight: 500;
+}
+
+#navigate p {
+  padding-left: 20px;
+}
+
+#support ul {
+  list-style: none;
+  padding-left: 0;
+  float: left;
+  margin-top: 5%;
+  margin-top: 2%;
+}
+
+#support li {
+  padding-bottom: 6%;
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr;
+  align-items: center;
+  font-weight: 500;
+}
+
+#support p {
+  padding-left: 20px;
 }
 
 .content {
