@@ -17,15 +17,68 @@
 .container {
   display: grid;
   grid-template-columns: 0.5fr 2.5fr;
-  grid-template-rows: 1fr 2.145fr;
+  grid-template-rows: 20vh 80vh;
 }
 
 .header {
+  position: relative;
   grid-column: 2 / span 2;
   grid-row: 1 / 1;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  padding-left: 10%;
+  padding-left: 5%;
+  box-shadow: 0 10px 10px -10px gray;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 1%;
+}
+
+.left-side {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+}
+
+.left-side input,
+.left-side input:focus {
+  width: 80%;
+  background-color: #9aaebc;
+  border: none;
+  border-radius: 20px;
+  align-content: center;
+}
+
+.left-side svg {
+  margin-left: 40%;
+}
+
+.right-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+.right-side svg {
+  margin-left: 70%;
+}
+
+.right-side img {
+  width: 10%;
+  height: 10%;
+}
+
+.right-side h3 {
+  margin-left: 10%;
+}
+
+.right-side div {
+  background-image: url("images/cherryblossom.jpg");
+  background-size: contain;
+  border-radius: 50%;
 }
 
 .sidebar {
@@ -42,7 +95,6 @@
   list-style: none;
   padding-left: 0;
   float: left;
-  margin-top: 5%;
   margin-top: 2%;
 }
 
@@ -69,8 +121,6 @@
   list-style: none;
   padding-left: 0;
   float: left;
-  margin-top: 5%;
-  margin-top: 2%;
 }
 
 #navigate li {
@@ -90,7 +140,6 @@
   padding-left: 0;
   float: left;
   margin-top: 5%;
-  margin-top: 2%;
 }
 
 #support li {
@@ -111,7 +160,8 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-left: 5%;
-  background-color: #c1c8e4;
+  background-color: #9aaebc;
+  padding-top: 3%;
 }
 
 .projects {
