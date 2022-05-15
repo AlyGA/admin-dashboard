@@ -58,17 +58,19 @@
 
 .right-side {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr 1fr;
   align-content: center;
   align-items: center;
+  justify-items: center;
 }
 
 .right-side svg {
+  justify-self: end;
 }
 
 .right-side .image {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 
   background-image: url("images/cherryblossom.jpg");
@@ -79,6 +81,58 @@
 
 .right-side h3 {
   display: block;
+  justify-self: start;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profileleft {
+  display: grid;
+  grid-template-columns: 0.3fr 1.6fr;
+}
+
+.profileleft .profile-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+
+  background-image: url("images/cherryblossom.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  justify-self: center;
+  align-self: center;
+}
+
+.profilename {
+  align-self: center;
+}
+
+.profileleft p {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.profileright {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+  justify-self: center;
+  gap: 20px;
+}
+
+.profileright button {
+  width: 90px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #5ab9ea;
+  border: none;
+  color: white;
+  font-weight: bold;
 }
 
 .sidebar {
