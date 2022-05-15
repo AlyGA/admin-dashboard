@@ -26,7 +26,7 @@
   grid-row: 1 / 1;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  padding-left: 5%;
+  padding-left: 2%;
   box-shadow: 0 10px 10px -10px gray;
 }
 
@@ -57,29 +57,28 @@
 }
 
 .right-side {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: center;
+  align-items: center;
 }
 
 .right-side svg {
-  margin-left: 70%;
 }
 
-.right-side img {
-  margin-left: 30%;
-  display: inline-block;
-  width: 50px;
+.right-side .image {
   height: 50px;
+  width: 50px;
   border-radius: 50%;
 
+  background-image: url("images/cherryblossom.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
 .right-side h3 {
-  margin-left: 10%;
+  display: block;
 }
 
 .sidebar {
@@ -160,17 +159,18 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 5%;
+  padding-left: 3%;
   background-color: #9aaebc;
   padding-top: 3%;
+  overflow: auto;
 }
 
 .projects {
   grid-column: 1 / 1;
   grid-row: 1 / span 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  min-width: 600px;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -178,6 +178,16 @@
   background-color: white;
   height: 150px;
   width: 400px;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+.card h2 {
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 1em;
 }
 
 .announcements {
