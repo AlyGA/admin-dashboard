@@ -215,7 +215,7 @@
   grid-template-rows: 1fr 1fr;
   padding-left: 3%;
   background-color: #9aaebc;
-  padding-top: 3%;
+  padding-top: 12px;
   overflow: auto;
 }
 
@@ -275,6 +275,19 @@
 
 .announcements {
   grid-column: 2;
+  display: grid;
+  gap: 10px;
+}
+
+.announcements h3 {
+}
+
+#announcement-card {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .trending {
