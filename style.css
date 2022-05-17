@@ -279,9 +279,6 @@
   gap: 10px;
 }
 
-.announcements h3 {
-}
-
 #announcement-card {
   width: 300px;
   height: 250px;
@@ -291,7 +288,6 @@
   margin-bottom: 20px;
   display: grid;
   grid-template-rows: 70px 20px 70px 20px 70px;
-  gap: 0px;
 }
 
 #announcement-card h4 {
@@ -319,9 +315,65 @@
   );
 }
 
-.accouncement-items {
-}
-
 .trending {
   grid-column: 2;
+  display: grid;
+  gap: 10px;
+}
+
+#trending-card {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  padding-left: 20px;
+}
+
+.trending .section {
+  display: inline-grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.section1 .trending-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-image: url("images/Aurora.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.section2 .trending-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-image: url("images/cherryblossom.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.section3 .trending-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-image: url("images/moon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.section4 .trending-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-image: url("images/mushroom.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
